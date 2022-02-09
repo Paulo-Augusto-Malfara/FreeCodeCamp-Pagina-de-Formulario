@@ -1,3 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quintessential&display=swap%22");
+
+:root {
+  --primary-color: #ffc745;
+  --secondary-color: #003378;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,10 +13,80 @@
   text-decoration: none;
 }
 
+body {
+  background-image: url(https://media.istockphoto.com/vectors/blue-vintage-background-royal-with-classic-baroque-pattern-vector-id1043744686?k=20&m=1043744686&s=170667a&w=0&h=7gz6YE2RIK_zSBaY3LcUGS8ZGRTIxYgkO55y2VJ6uU0=);
+}
+
+#title {
+  margin-top: 20px;
+  text-align: center;
+  color: var(--primary-color);
+  font-family: "Quintessential", cursive;
+  text-shadow: 5px 5px 5px black;
+}
+
+#description {
+  margin-top: 10px;
+  text-align: center;
+  color: var(--primary-color);
+  font-family: "Quintessential", cursive;
+  text-shadow: 5px 5px 5px black;
+}
+
+form {
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0 0 1em black;
+  background-color: var(--secondary-color);
+  width: 80%;
+  margin: auto;
+  color: var(--primary-color);
+  opacity: 75%;
+  font-family: "rubik",sans-serif;
+  font-weight: bold;
+}
+
+.box-form {
+  box-sizing: border-box;
+  width: 60%;
+  padding: 5px 5px;
+  margin-top: 5px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+#dropdown {
+  margin-top: 5px;
+  box-sizing: border-box;
+  width: 38%;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+textarea {
+  box-sizing: border-box;
+  width: 90%;
+  margin-top: 5px;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 16px;
+  overflow: hidden;
+  resize: none;
+}
+
+#submit {
+  box-sizing: border-box;
+  width: 90%;
+  padding: 5px 5px;
+  margin-top: 10px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
 input:invalid {
   border: 2px solid red;
 }
-
 input:valid {
-  border: 2px solid green;
+  border: 2px solid black;
 }
