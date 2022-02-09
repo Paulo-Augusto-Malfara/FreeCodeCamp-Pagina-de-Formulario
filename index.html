@@ -9,12 +9,13 @@
   </head>
   <body>
     <h1 id="title">Dragon Style - Swordplay e Eventos</h1>
-    <p id="description">Formulário de aplicação para novos membros</p>
+    <p id="description">Formulário de aplicação para novos membros</p><br />
     <form id="survey-form">
       <label for="name" id="name-label"
         >Nome <br />
         <input
           id="name"
+          class="box-form"
           type="text"
           placeholder="Insira seu nome"
           required /><br /><br
@@ -23,6 +24,7 @@
         >E-mail <br />
         <input
           id="email"
+          class="box-form"
           type="email"
           placeholder="Insira seu e-mail"
           required /><br /><br
@@ -31,6 +33,7 @@
         >Idade (opcional) <br />
         <input
           id="age"
+          class="box-form"
           type="number"
           min="12"
           max="70"
@@ -72,16 +75,11 @@
       ><br />
       <label for="sunday">
         <input id="sunday" type="checkbox" value="sunday" /> Domingo </label
-      ><br />
+      ><br /><br />
       <p>
         Deixe aqui quaisquer comentários ou observações que gostaria de fazer.
       </p>
-      <br />
-      <input
-        id="text-area"
-        type="text"
-        placeholder="Insira seu comentário aqui"
-      /><br><br>
+      <textarea name="text" rows="5" cols="10" wrap="soft" maxlength="280"></textarea><br>
       <button id="submit">Submit</button>
     </form>
   </body>
