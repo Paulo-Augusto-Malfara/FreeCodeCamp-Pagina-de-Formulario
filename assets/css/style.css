@@ -3,7 +3,7 @@
 
 :root {
   --primary-color: #ffc745;
-  --secondary-color: #003378;
+  --secondary-color: rgba(0, 51, 120,0.4);
 }
 
 * {
@@ -15,6 +15,7 @@
 
 body {
   background-image: url(https://media.istockphoto.com/vectors/blue-vintage-background-royal-with-classic-baroque-pattern-vector-id1043744686?k=20&m=1043744686&s=170667a&w=0&h=7gz6YE2RIK_zSBaY3LcUGS8ZGRTIxYgkO55y2VJ6uU0=);
+  padding-bottom: 20px;
 }
 
 #title {
@@ -31,24 +32,26 @@ body {
   color: var(--primary-color);
   font-family: "Quintessential", cursive;
   text-shadow: 5px 5px 5px black;
+  font-size: 20px;
 }
 
-form {
-  padding: 10px;
+#survey-form {
+  padding-left: 5%;
+  padding-top: 20px;
+  padding-bottom: 20px;
   border-radius: 20px;
   box-shadow: 0 0 1em black;
   background-color: var(--secondary-color);
-  width: 80%;
+  width: 50%;
   margin: auto;
   color: var(--primary-color);
-  opacity: 75%;
   font-family: "rubik",sans-serif;
   font-weight: bold;
 }
 
 .box-form {
   box-sizing: border-box;
-  width: 60%;
+  width: 90%;
   padding: 5px 5px;
   margin-top: 5px;
   font-size: 15px;
@@ -58,10 +61,20 @@ form {
 #dropdown {
   margin-top: 5px;
   box-sizing: border-box;
-  width: 38%;
+  width: 90%;
   padding: 5px;
   font-size: 16px;
   border-radius: 5px;
+}
+
+.interest {
+  margin-top: 10px;
+  line-height: 25px;
+}
+
+.training-days{
+  margin-top: 10px;
+  line-height: 35px;
 }
 
 textarea {
@@ -82,6 +95,10 @@ textarea {
   margin-top: 10px;
   font-size: 15px;
   border-radius: 5px;
+}
+#submit:hover{
+  background-color: rgb(101, 241, 101);
+  font-weight: bold;
 }
 
 input:invalid {

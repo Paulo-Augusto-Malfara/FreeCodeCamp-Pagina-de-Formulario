@@ -9,7 +9,8 @@
   </head>
   <body>
     <h1 id="title">Dragon Style - Swordplay e Eventos</h1>
-    <p id="description">Formulário de aplicação para novos membros</p><br />
+    <p id="description">Formulário de aplicação para novos membros</p>
+    <br />
     <form id="survey-form">
       <label for="name" id="name-label"
         >Nome <br />
@@ -42,6 +43,7 @@
       <label for="classes">Qual classe você se identifica?</label>
       <br />
       <select name="classes" id="dropdown">
+        <option value="default">Selecione uma Classe</option>
         <option value="Assassino">Assassino</option>
         <option value="Guerreiro">Guerreiro</option>
         <option value="Cavaleiro">Cavaleiro</option>
@@ -55,31 +57,42 @@
         <option value="Cruzado">Cruzado</option></select
       ><br /><br />
       <p>Qual seu nível de interesse em participar dos treinos?</p>
-      <br />
-      <label for="high-interest">
-        <input id="high-interest" type="radio" name="interest-level" /> Muito
-        interessado<br />
-      </label>
-      <label for="medium-interest">
-        <input id="medium-interest" type="radio" name="interest-level" />
-        Interessado<br />
-      </label>
-      <label for="low-interest">
-        <input id="low-interest" type="radio" name="interest-level" /> Pouco
-        interessado<br /><br />
-      </label>
+      <div class="interest">
+        <label for="high-interest">
+          <input id="high-interest" type="radio" name="interest-level" /> Muito
+          interessado<br />
+        </label>
+        <label for="medium-interest">
+          <input id="medium-interest" type="radio" name="interest-level" />
+          Interessado<br />
+        </label>
+        <label for="low-interest">
+          <input id="low-interest" type="radio" name="interest-level" /> Pouco
+          interessado<br /><br />
+        </label>
+      </div>
       <p>Quais dias da semana você pode participar dos treinos?</p>
+      <div class="training-days">
+        <label for="saturday">
+          <input id="saturday" type="checkbox" value="saturday" />
+          Sábado </label
+        ><br />
+        <label for="sunday">
+          <input id="sunday" type="checkbox" value="sunday" /> Domingo
+        </label>
+      </div>
       <br />
-      <label for="saturday">
-        <input id="saturday" type="checkbox" value="saturday" /> Sábado </label
-      ><br />
-      <label for="sunday">
-        <input id="sunday" type="checkbox" value="sunday" /> Domingo </label
-      ><br /><br />
       <p>
         Deixe aqui quaisquer comentários ou observações que gostaria de fazer.
       </p>
-      <textarea name="text" rows="5" cols="10" wrap="soft" maxlength="280"></textarea><br>
+      <textarea
+        name="text"
+        rows="5"
+        cols="10"
+        wrap="soft"
+        maxlength="280"
+      ></textarea
+      ><br />
       <button id="submit">Submit</button>
     </form>
   </body>
