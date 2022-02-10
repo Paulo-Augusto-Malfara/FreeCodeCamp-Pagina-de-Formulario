@@ -3,7 +3,7 @@
 
 :root {
   --primary-color: #ffc745;
-  --secondary-color: rgba(0, 51, 120,0.4);
+  --secondary-color: rgba(0, 51, 120, 0.4);
 }
 
 * {
@@ -45,7 +45,7 @@ body {
   width: 50%;
   margin: auto;
   color: var(--primary-color);
-  font-family: "rubik",sans-serif;
+  font-family: "rubik", sans-serif;
   font-weight: bold;
 }
 
@@ -72,7 +72,7 @@ body {
   line-height: 25px;
 }
 
-.training-days{
+.training-days {
   margin-top: 10px;
   line-height: 35px;
 }
@@ -96,7 +96,7 @@ textarea {
   font-size: 15px;
   border-radius: 5px;
 }
-#submit:hover{
+#submit:hover {
   background-color: rgb(101, 241, 101);
   font-weight: bold;
 }
@@ -106,4 +106,10 @@ input:invalid {
 }
 input:valid {
   border: 2px solid black;
+}
+
+@media (max-width: 700px) {
+  #survey-form {
+    width: 90%
+  }
 }
